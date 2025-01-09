@@ -97,8 +97,8 @@ def main_loop():
                 pyautogui.press('tab')
                 pyautogui.keyUp('alt')
 
-
-            if stop_event.wait(120):
+            random_number = random.randint(0, 90)
+            if stop_event.wait(120 + random_number):
                 break
 
         stop_event.clear()
